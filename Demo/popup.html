@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Get Insigts</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div id="insights-container" class="container-fluid">
+      <center>
+        <div class="loader" hidden></div>        
+      </center>
+
+
+      <div class="title-bar text-page">
+        <center>
+          <strong>
+           <p class="title-label-class" id="title-label">Input text to analyze</p>
+          </strong>
+        </center>
+      </div>
+
+      <div class="title-bar results-page">
+        <center>
+          <strong>
+            <p class="title-label-class" id="title-label-result">Result</p>
+          </strong>
+        </center>
+      </div>
+
+      <div class="row text-page" id="text-row">
+        <div class="col-sm-12">
+          <textarea class="form-control" rows="10" id="text"></textarea>     
+        </div>
+      </div>
+
+      <div class="row results-page" id="results">
+        <div class="col-sm-12">
+          <textarea class="form-control" rows="10" id="results-textarea"></textarea>     
+        </div>
+      </div>
+
+      <div class="row text-page" id="submit-button-row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <button type="button" class="btn btn-primary full-width" id="submit">Submit</button>      
+        </div>
+      </div>
+
+      <div class="row results-page" id="submit-button-row">
+        <div class="col-sm-12">
+        <center>
+          
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary " id="reset">Reset</button>
+
+            <button type="button" class="btn btn-primary " id="copy">Copy</button>
+          </div>
+        </center>
+        </div>
+
+      </div>
+
+      <div class="row text-page" id="error" hidden>
+        <div class="alert alert-danger fade in" id="error" >
+          <a href="#" class="close" id="close-button">&times;</a>
+          <strong>Error!</strong> <span id="error-msg"></span>
+        </div>
+      </div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
+

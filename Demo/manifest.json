@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Insights chrome extension",
+  "description": "This extension gets results from IBM Watson personality insights api",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://insights-chrome-ext.mybluemix.net/"
+  ],
+  "web_accessible_resources": ["ring.gif"]
+}
